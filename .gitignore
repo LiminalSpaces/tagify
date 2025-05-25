@@ -1,3 +1,6 @@
+# Yarn working files
+.yarn
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db

@@ -30,7 +30,7 @@
     "build": "gulp",
     "version": "gulp build && git add .",
     "prepublishOnly": "pjv",
-    "test": "pnpm exec playwright test",
+    "test": "yarn playwright test",
     "serve": "npx http-server -o index.html -c-1"
   },
   "jest": {
