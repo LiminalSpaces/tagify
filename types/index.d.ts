@@ -216,7 +216,7 @@ declare namespace Tagify {
     }
 
     // Settings configuration
-    interface TagifySettings<T extends BaseTagData = TagData> extends Partial<TagifyCoreSettings<T>> {
+export interface TagifySettings<T extends BaseTagData = TagData> extends Partial<TagifyCoreSettings<T>> {
         templates?: Templates<T> | undefined;
         editTags?: 1 | 2 | false | null | EditTagsSettings | undefined;
         mixMode?: MixModeSettings | undefined;
@@ -228,7 +228,7 @@ declare namespace Tagify {
     }
 
     // Generic tag format
-    interface TagData extends BaseTagData {
+export interface TagData extends BaseTagData {
         [key: string]: any;
     }
 
