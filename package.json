@@ -1,5 +1,5 @@
 {
-  "name": "tagify",
+  "name": "@liminalspaces/tagify",
   "version": "4.35.1",
   "homepage": "https://github.com/LiminalSpaces/tagify",
   "description": "lightweight, efficient Tags input component in Vanilla JS / React / Angular [super customizable, tiny size & top performance]",
