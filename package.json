@@ -1,7 +1,7 @@
 {
-  "name": "@yaireo/tagify",
+  "name": "tagify",
   "version": "4.35.1",
-  "homepage": "https://github.com/yairEO/tagify",
+  "homepage": "https://github.com/LiminalSpaces/tagify",
   "description": "lightweight, efficient Tags input component in Vanilla JS / React / Angular [super customizable, tiny size & top performance]",
   "keywords": [
     "tags",
@@ -59,7 +59,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yairEO/tagify.git"
+    "url": "git+https://github.com/LiminalSpaces/tagify.git"
   },
   "bugs": {
     "url": "https://github.com/yaireo/tagify/issues"

@@ -315,7 +315,11 @@ Tagify.prototype = {
         this.dropdown.hide(true)
         this.removeAllCustomListeners()
         clearTimeout(this.dropdownHide__bindEventsTimeout)
-        clearInterval(this.listeners.main.originalInputValueObserverInterval)
+        // Assert that originalInputValueObserverInterval exists before trying to clear the interval
+        // since when 'readOnly' is true, the Observerinterval is not setup in the same way
+        if (this.listeners?.main?.originalInputValueObserverInterval) {
+            clearInterval(this.listeners.main.originalInputValueObserverInterval)
+        }
     },
 
     /**
