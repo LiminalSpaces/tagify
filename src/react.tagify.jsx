@@ -121,7 +121,13 @@ const TagifyWrapper = ({
 
         // cleanup
         return () => {
-            t.destroy()
+            try {
+                if (t && typeof t.destroy === 'function') {
+                    t.destroy()
+                }
+            } catch (err) {
+                console.warn('Error while destroying Tagify instance:', err)
+            }
         }
     }, [])
 
